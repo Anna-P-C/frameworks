@@ -1,0 +1,86 @@
+{
+    "info": {
+        "name": "Symfony Sponsors CRUD",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get All Sponsors",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8001/sponsors",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "8001",
+                    "path": ["sponsors"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Create Sponsor",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"Coca-Cola\",\n    \"amount\": 75000\n}"
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:8001/sponsors",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "8001",
+                    "path": ["sponsors"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Update Sponsor",
+            "request": {
+                "method": "PATCH",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"Coca-Cola HBC\",\n    \"amount\": 80000\n}"
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:8001/sponsors/1",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "8001",
+                    "path": ["sponsors", "1"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Delete Sponsor",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8001/sponsors/1",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "8001",
+                    "path": ["sponsors", "1"]
+                }
+            },
+            "response": []
+        }
+    ]
+}

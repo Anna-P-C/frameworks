@@ -1,0 +1,101 @@
+{
+    "info": {
+        "name": "Laravel Sponsors CRUD",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get All Sponsors",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8000/sponsors",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "8000",
+                    "path": ["sponsors"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Create Sponsor",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"Nestle\",\n    \"amount\": 50000\n}"
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:8000/sponsors",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "8000",
+                    "path": ["sponsors"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get One Sponsor",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8000/sponsors/1",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "8000",
+                    "path": ["sponsors", "1"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Update Sponsor",
+            "request": {
+                "method": "PATCH",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"Nestle Ukraine\",\n    \"amount\": 55000\n}"
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:8000/sponsors/1",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "8000",
+                    "path": ["sponsors", "1"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Delete Sponsor",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8000/sponsors/1",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "8000",
+                    "path": ["sponsors", "1"]
+                }
+            },
+            "response": []
+        }
+    ]
+}
