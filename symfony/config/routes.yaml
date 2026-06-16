@@ -1,11 +1,9 @@
-# yaml-language-server: $schema=../vendor/symfony/routing/Loader/schema/routing.schema.json
+sponsors_crud:
+    path: /sponsors
+    controller: App\Controller\SponsorController::index
+    methods: [GET]
 
-# This file is the entry point to configure the routes of your app.
-# Methods with the #[Route] attribute are automatically imported.
-# See also https://symfony.com/doc/current/routing.html
-
-# To list all registered routes, run the following command:
-#   bin/console debug:router
-
-controllers:
-    resource: routing.controllers
+sponsors_crud_id:
+    path: /sponsors/{id}
+    controller: App\Controller\SponsorController::update
+    methods: [PATCH]
